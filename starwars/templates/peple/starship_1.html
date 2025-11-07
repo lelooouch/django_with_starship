@@ -248,18 +248,11 @@
         <div class="films-section">
             <h2 class="info-title">Film Appearances</h2>
             <div class="films-grid">
+                {% for film in films %}
                 <div class="film-card">
-                    <h3>A New Hope</h3>
-                    <p>Episode IV</p>
+                    <h3>{{film}}</h3>
                 </div>
-                <div class="film-card">
-                    <h3>The Empire Strikes Back</h3>
-                    <p>Episode V</p>
-                </div>
-                <div class="film-card">
-                    <h3>Return of the Jedi</h3>
-                    <p>Episode VI</p>
-                </div>
+                {% endfor %}
             </div>
         </div>
 
