@@ -59,8 +59,8 @@ def update_data_for_starhip(data):
 
     new_pilots = list()
     for pilot in pilots:
-        pilot = send_req(pilot)
-        new_pilots.append(pilot['name'])
+        pilot_data = send_req(pilot)
+        new_pilots.append((pilot_data['name'], pilot_data['gender']))
 
 
     data['films'] = new_films

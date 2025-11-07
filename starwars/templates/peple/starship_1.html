@@ -236,22 +236,12 @@
         <div class="pilots-section">
             <h2 class="info-title">Famous Pilots</h2>
             <div class="pilots-grid">
+                {% for pilot in pilots %}
                 <div class="pilot-card">
-                    <h3>Luke Skywalker</h3>
-                    <p>Destroyer of the Death Star</p>
+                    <h3>{{pilot.0}}</h3>
+                    <p>{{pilot.1}}</p>
                 </div>
-                <div class="pilot-card">
-                    <h3>Wedge Antilles</h3>
-                    <p>Red Two</p>
-                </div>
-                <div class="pilot-card">
-                    <h3>Biggs Darklighter</h3>
-                    <p>Red Three</p>
-                </div>
-                <div class="pilot-card">
-                    <h3>Jek Tono Porkins</h3>
-                    <p>Red Six</p>
-                </div>
+                {% endfor %}
             </div>
         </div>
 
