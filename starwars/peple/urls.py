@@ -6,4 +6,3 @@ urlpatterns = [
     path('X-wing/', views.get_X_wing),
     path('Imperial_shuttle/', views.get_Imperial_shuttle)
 ]
-
