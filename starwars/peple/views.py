@@ -84,3 +84,11 @@ def get_Imperial_shuttle(request):
 
         return render(request, 'peple/starship_2.html', updated_data)
     return HttpResponse('не удалось')
+
+def get_Slave_1(request):
+    data = send_req('https://swapi.dev/api/starships/21/')
+    if data:
+        updated_data = update_data_for_starhip(data)
+
+        return render(request, 'peple/starship_2.html', updated_data)
+    return HttpResponse('не удалось')
