@@ -76,3 +76,11 @@ def get_X_wing(request):
 
         return render(request, 'peple/starship_1.html', updated_data)
     return HttpResponse('не удалось')
+
+def get_Imperial_shuttle(request):
+    data = send_req('https://swapi.dev/api/starships/22/')
+    if data:
+        updated_data = update_data_for_starhip(data)
+
+        return render(request, 'peple/starship_2.html', updated_data)
+    return HttpResponse('не удалось')
