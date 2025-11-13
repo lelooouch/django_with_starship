@@ -66,7 +66,6 @@ def update_data_for_starhip(data):
 
     return data
 
-
 def get_X_wing(request):
     data = send_req('https://swapi.dev/api/starships/12/')
     if data:
