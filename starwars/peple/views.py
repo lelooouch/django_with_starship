@@ -47,7 +47,6 @@ def get_luke_info(request):
     return HttpResponse('не удалось')
 
 
-
 def update_data_for_starhip(data):
     films = data['films']
     pilots = data['pilots']
